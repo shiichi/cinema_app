@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* メニューの色変更
+------------------------------------------------------------*/
+li#menu_dantai a{
+    color:#ffffff;
+    background-color: #838383;
+}
+
+/* 団体一覧
+-------------------------------------------------------------*/
+.dantai {
+    border-bottom: 1px dashed #d5dce4;
+    padding-bottom: 23px;
+    margin-bottom: 17px;
+}
+
+.dantai h2 {
+    font-size: 24px;
+}
+
+.dantai img{
+    margin-right: 5px;
+}
+
+h5 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dantai .title_right {
+    margin-top: 16px;
+    float: right;
+}
+
+.dantai hr {
+    margin-bottom: 1px;
+}
+
+.dantai h3 {
+    font-size: 20px;
+    color: #2181bd;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dantai ul {
+    margin: 0 0 7px 25px;
+    line-height: 25px;
+}
+
+.dantai p {
+    margin-left: 26px;
+}

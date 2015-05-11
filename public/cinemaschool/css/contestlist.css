@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* メニューの色変更
+------------------------------------------------------------*/
+li#menu_contestlist a{
+    color:#ffffff;
+    background-color: #838383;
+}
+
+/*コンテスト一覧
+-----------------------------------------*/
+.clear{clear:both;}
+.floatLeft{float:left;}
+.floatRight{float:right;}
+.th,.tr,.td{font-size: 15px;}
+.box_contest_ichiran{
+    padding-top:17px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #d5dce4;}
+.box_contest_ichiran .blue{
+    color: #2181BD;}
+.box_contest_ichiran p{
+    font-size: 16px;
+}
+a .box_contest_ichiran p{
+    color: #000000;
+}
+a .box_contest_ichiran:hover {
+    background-color: #f7f9fb;
+}
+.box_contest_ichiran .contest_ichiran_title{
+    border-bottom: 1px solid #d5dce4;}
+.box_contest_ichiran .contest_ichiran_title h2{
+    font-size: 20px;
+    font-weight: bold;}
+.box_contest_ichiran .contest_ichiran_title p{
+    font-size: 16px;
+    padding-top: 12px;}
+.box_contest_ichiran .period{
+    width: 640px;
+    height: 16px;
+    margin-top: 4px;
+    float: left;}
+.box_contest_ichiran .period p{
+    font-size: 16px;}
+.box_contest_ichiran .table0{
+    width:280px;}
+.box_contest_ichiran table .td_tsume{
+    width:450px;}
+.box_contest_ichiran table,.td,.th{
+    padding:0;
+    border-collapse:collapse;
+    border: 0px solid black;}
+.box_contest_ichiran .td {
+    border: 0px solid black;}
+.box_contest_ichiran .tableleft{
+    width: 148px;
+    height: 67px;
+    margin-top: 10px;
+    float: left;
+}
+.box_contest_ichiran .tableright{
+    width: 132px;
+    height: 67px;
+    margin-top: 10px;
+    float: left;
+}
+.box_contest_ichiran a{
+    color: #2181BD;
+    text-decoration: none;}
+.box_contest_ichiran .margin-top {
+}
+.box_contest_ichiran .td img {
+    margin-right: 5px;
+    vertical-align: center;
+    float: left;}
+.box_contest_ichiran .td p {
+    float: left;
+    font-size: 16px;
+    vertical-align: center;}
+.box_contest_ichiran .info{
+    font-size: 13px;
+    margin-top: 45px;}
+.box_contest_ichiran .movieTitle, .universityTitle{
+    height: 30px;
+    font-size: 16px;}
+.box_contest_ichiran .table2{
+    margin-left: 15px;}

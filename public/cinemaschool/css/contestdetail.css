@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* メニューの色変更
+------------------------------------------------------------*/
+li#menu_contestlist a{
+    color:#ffffff;
+    background-color: #838383;
+}
+
+/* コンテスト詳細
+-------------------------------------------------------------*/
+
+.contest_banner {
+    width: 640px;
+    height: 268px;
+    margin-bottom: 19px;
+    color: #ffffff;
+    float: left;
+}
+
+.contest_banner img {
+    position: absolute;
+}
+
+.contest_banner_text {
+    width: 625px;
+    height: 36px;
+    margin: 210px 15px 0 0;
+    position: absolute;
+    text-align: right;
+}
+
+.contest_banner_text span {
+    font-size: 18px;
+}
+
+.contest_banner_text h3 {
+    font-size: 36px;
+    display: inline;
+}
+
+.contest_date {
+    width: 320px;
+    font-size: 16px;
+    margin: 33px 0 33px 0;
+    letter-spacing: 0.1em;
+    float: left;
+}
+
+.contest_date span {
+    color: #2181bd;
+}
+
+.contest_member {
+    width: 320px;
+    font-size: 16px;
+    margin: 33px 0 33px 0;
+    letter-spacing: 0.1em;
+    float: left;
+}
+
+.contest_member span {
+    color: #2181bd;
+}
+
+.contest_box {
+    width: 640px;
+    margin-bottom: 10px;
+    color: #000000;
+    float: left;
+}
+
+.contest_box2 {
+    width: 640px;
+    height: 230px;
+}
+
+.contest_box2_left {
+    width: 162px;
+    float: left;
+}
+
+.contest_box2_right {
+    width: 478px;
+    float: right;
+    color: #000000;
+}
+
+.contest_box2_right p, .contest_box2_right h3, .contest_box2_right h4{
+    margin-left: 12px;
+}
+
+.contest_box2_title {
+    line-height: 34px;
+    font-size: 30px;
+    color: #2181bd;
+    margin-left: 12px;
+}
+
+.contest_box2_dantai {
+    font-size: 24px;
+    color: #2181bd;
+    margin-left: 12px;
+}
+
+.contest_award {
+    width: 200px;
+    height: 25px;
+    padding: 0 435px 0 5px;
+}
+
+.content_award img {
+    width: 60px;
+    height: 20px;
+    float: left;
+}
+
+.contest_award p{
+    width: 135px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 27px;
+    float: right;
+}
+
+.contest_award p.no_oukan {
+    height: 25px;
+    float: left;
+}
+
+.contest_box:hover {
+    background-color: #f7f9fb;
+}
+

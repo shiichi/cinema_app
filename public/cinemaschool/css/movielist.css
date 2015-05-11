@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* メニューの色変更
+------------------------------------------------------------*/
+li#menu_movielist a{
+    color:#ffffff;
+    background-color: #838383;
+}
+
+/* 映画一覧
+-------------------------------------------------------------*/
+.search{
+    width: 506px;
+    height: 31px;
+    -moz-border-radius: 4px;    /* Firefox */
+    -webkit-border-radius: 4px; /* Safari,Chrome */
+    border-radius: 4px;         /* CSS3 */
+    border-bottom: solid 1px #d1d1d1;
+    border-right: solid 1px #d1d1d1;
+}
+
+.style_1{
+border:none;
+padding:0px 10px;
+width:450px;
+height: 29px;
+font-size:1.4em;
+color: #cacace;
+float: left;
+}
+
+.style_2{
+behavior: url("/csshover3.htc");
+float: left;
+}
+
+.style_2:hover{
+    filter:alpha(opacity=75);
+    -moz-opacity:0.75;
+    opacity:0.75;
+}
+
+.floatLeft{ float: left; }
+.box_eiga_ichiran{
+    border-bottom: 1px dashed #d5dce4;
+    overflow:hidden;}
+.box_eiga_ichiran p, .box_eiga_ichiran h3{
+    color: #000000;}
+.box_eiga_ichiran .imgMovie{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 26px;
+    vertical-align: top;}
+.box_eiga_ichiran .imgOukan{
+    padding-right:5px;
+    vertical-align: -3px;}
+.box_eiga_ichiran a{
+    color:#2181BD;
+    text-decoration:none;}
+.box_eiga_ichiran .box_eiga_ichiran_title{
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 16px;}
+.box_eiga_ichiran h3{
+    padding: 4px 0 6px;
+    font-size:14px;}
+.box_eiga_ichiran p{
+    padding-bottom: 30px;
+    font-size: 11px;
+    line-height: 180%;}
+.box_eiga_ichiran:hover {
+    background-color: #f7f9fb;
+}

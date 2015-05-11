@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* メニューの色変更
+------------------------------------------------------------*/
+li#menu_contact a{
+    color:#ffffff;
+    background-color: #838383;
+}
+
+/* お問い合わせ
+-------------------------------------------------------------*/
+
+.contact_font {
+    margin-bottom: 5px;
+}
+
+.form_box {
+}
+
+.form_left {
+    width: 110px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 3px;
+    text-align: right;
+    float: left;
+}
+
+.form_right {
+    width: 526px;
+    float: right;
+}
+
+.form_address {
+    width: 176px;
+}
+
+.form_text {
+    width: 520px;
+}
+
+.form_submit {
+    float: right;
+}
+
+.dantai_link {
+    filter: alpha(opacity=100);
+    -moz-opacity:1.0;
+    opacity:1.0;
+    float: right;
+}
+
+.dantai_link:hover {
+    filter: alpha(opacity=50);
+    -moz-opacity:0.50;
+    opacity:0.50;
+}
+
+.sns {
+    font-size: 18px;
+}
+
+.sns li {
+    margin-bottom: 5px;
+}
+
+.sns li a{
+    margin-top: 2px;
+}
+
+
+.sns img{
+    margin-right: 8px;
+    vertical-align:middle;}
+

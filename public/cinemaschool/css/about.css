@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* メニューの色変更
+------------------------------------------------------------*/
+li#menu_about a{
+    color:#ffffff;
+    background-color: #838383;
+}
+
+/* 企画の詳細
+-------------------------------------------------------------*/
+.about1 {
+    width: 640px;
+    height: 223px;
+}
+.about1_left p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 35px;
+}
+.about1_right{
+    width: 223px;
+    height: 223px;
+    float: left;
+}
+.about1_left {
+    width: 417px;
+    height: 223px;
+    float: left;
+}
+.about2 {
+    width: 640px;
+    margin-bottom: 60px;
+}
+.about2 h2 {
+    width: 640px;
+}
+.about2_left {
+    width: 417px;
+    height: 223px;
+    float: right;
+}
+.about2_left p{
+    width: 455px;
+    font-size: 14px;
+    line-height: 24px;    
+}
+.about2_right{
+    width: 223px;
+    height: 223px;
+    margin-top: 32px;
+    float: right;
+}
+.about3 {
+    width: 280px;
+    height: 76px;
+    margin: 0 auto 42px auto;
+}
+    
+.about3 p{
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+}
+.about3 .pdf_link {
+    width: 278px;
+    height: 35px;
+    background-color: #e6e9eb;
+    border: 1px solid #d4dce2;
+}
+.about3 .pdf_link p{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+}
+a .pdf_link:hover {
+    filter:alpha(opacity=75);
+    -moz-opacity:0.75;
+    opacity:0.75;
+}

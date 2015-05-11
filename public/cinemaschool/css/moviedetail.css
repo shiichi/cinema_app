@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* メニューの色変更
+------------------------------------------------------------*/
+li#menu_movielist a{
+    color:#ffffff;
+    background-color: #838383;
+}
+
+/* 映画詳細
+-------------------------------------------------------------*/    
+.movie_detail_left {
+    width: 217px;
+    float: left;
+}
+
+.movie_detail_right{
+    width: 411px;
+    text-align: left;
+    float: right;
+}
+
+.movie_detail_right .title {
+    width: 100%;
+    height: 60px;
+    float: left;
+}
+
+.movie_detail_right .title  h2{
+    margin: 0 10px 0 0;
+    font-size: 36px;
+    color: #2181BD;
+    font-weight: bold;
+    float: left;
+    line-height: 36px
+}
+
+.movie_detail_right .title span{
+    margin-top: 6px;
+    font-size: 30px;
+    color: #8e8e8e;
+    vertical-align: bottom;
+}
+
+.movie_detail_right p {
+    line-height: 25px;
+}
+
+.movie_detail_right img {
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.movie_detail .title h6{
+    width: 640px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: #2181BD;
+    float: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.box_eiga_ichiran:hover {
+    background-color: #f7f9fb;
+    cursor: pointer;
+}
+
+.review_title {
+    width: 640px;
+    height: 47px;
+    background-color: #e6e9eb;
+    float: left;
+}
+.review_title .bold {
+    line-height: 48px;
+    float: left;
+}
+.review_award {
+    width: 250px;
+    height: 16px;
+    float: left;
+}
+.review_title img{
+    height: 20px;
+    line-height: none;
+    margin: 14px 5px 14px 0;
+    float: left;
+}
+p.review_university {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #2181BD;
+    margin: 0 54px 0 5px;
+    float: left;
+}
+p.review_word {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 5px 0;
+    float: left;
+}
+p.shop_link_words {
+    margin-bottom: 5px;
+}
+
+.comment_left {
+    width: 47px;
+    padding-right: 3px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 25px;
+    float: left;
+}
+
+.comment_right {
+    width: 590px;
+    float: right;
+}
+
+.comment_address {
+    width: 176px;
+}
+
+.comment_text {
+    width: 584px;
+    height: 92px;
+}
+
+.comment_submit {
+    float: right;
+}
+.comment_list_box {
+    width: 640px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d5dce4;
+    float: left;
+}
+.comment_list_name {
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+.comment_list_date{
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 12px;
+    vertical-align: bottom;
+    float: right;
+}
+.comment_list_content {
+    width: 640px;
+    font-size: 14px;
+    margin-left: 5px;
+    float: left;
+}
+
