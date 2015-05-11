@@ -1,48 +1,56 @@
-<!DOCTYPE HTML>
-<html lang="ja">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Larael test app</title>
- 
-    <!-- CSS <link href="/css/app.css" rel="stylesheet">　-->
-    <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="/css/business-casual.css" rel="stylesheet">
-
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="/bourbon/css/style.css">
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="/bourbon/js/search_movie.js" type="text/javascript" ></script>
 </head>
- 
 <body>
-    <div class="brand">Horita IT Scho</div>
-    <div class="address-bar">Technology is best for our future.</div>
-    {{-- ナビゲーションバーの Partial を使用 --}}
-    @include('navbar')
-    <div class="container">
-        {{-- フラッシュメッセージの表示 --}}
-        @if (Session::has('flash_message'))
-            <div class="alert alert-success">{{ Session::get('flash_message') }}</div>
-        @endif
-        {{-- コンテンツの表示 --}}
-        @yield('content')
+<div id="wrapper" style="width:90%; margin:auto;">
+  <!--　ヘッダー　-->
+  <header class="header" role="contentinfo">
+    <div class="header-logo">
+      <img src="/img/logotitle.png" alt="Logo image">
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; shiichi saito 2015</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Products</a></li>
+      </ul>
 
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
+      <div class="header-secondary-links">
+        <ul class="">
+          @if (Auth::guest())
+          {{-- ログインしていない時 --}}
+          <li><a href="/auth/login">Login</a></li>
+          <li><a href="/auth/register">Register</a></li>
+          @else
+          {{-- ログインしている時 --}}
+          <li class="dropdown">
+              <a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">
+              {{ Auth::user()->name }}
+              <span class="caret"></span>
+              </a>
+              <ul class="" role="menu">
+                  <li><a href="/auth/logout">Logout</a></li>
+              </ul>
+          </li>
+        @endif
+        </ul>
+      </div>
+  </header>
+  <!--　検索フォーム　-->
+  <form class="search-bar" role="search" method="GET" action="/cinema/search_movie">
+    <input type="search" name="searchtext"　placeholder="映画・人物を検索" />
+    <button type="submit">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+    </button>
+  </form>
+  <div>
+    @yield('content')
+  </div>
+</div><!-- / .wrapper -->
 </body>
 </html>

@@ -17,7 +17,7 @@ class AuthController extends Controller {
 	 * @return void
 	 */
 
-	protected $redirectTo = '/articles';
+	protected $redirectTo = '/cinema';
 	
 	public function __construct(Guard $auth, Registrar $registrar)
 	{

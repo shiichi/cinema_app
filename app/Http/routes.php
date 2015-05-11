@@ -11,6 +11,7 @@
 |
 */
 //映画
+Route::get('/', 'CinemasController@index');
 Route::get('cinema/', 'CinemasController@index');
 Route::get('cinema/home', 'CinemasController@home');
 Route::get('cinema/movie/{movie_id}', 'CinemasController@show_movie');
@@ -26,7 +27,7 @@ Route::get('home', 'PagesController@home');
 Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 
-Route::get('/', ['as' => 'articles.index', 'uses' => 'ArticlesController@index']);
+//Route::get('/', ['as' => 'articles.index', 'uses' => 'ArticlesController@index']);
 Route::get('articles', ['as' => 'articles.index', 'uses' => 'ArticlesController@index']);
 Route::get('articles/create', ['as' => 'articles.create', 'uses' => 'ArticlesController@create']);
 Route::get('articles/{id}', ['as' => 'articles.show', 'uses' => 'ArticlesController@show']);

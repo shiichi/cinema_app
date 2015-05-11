@@ -1,4 +1,4 @@
-@extends('layout2')
+@extends('layout')
  
 @section('content')
 <h1>『{{ $searchtext }}』の検索結果</h1>
