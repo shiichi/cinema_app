@@ -32,3 +32,4 @@ class Movie extends Model {
         return $this->belongsTo('App\Country');
     }
 }
+

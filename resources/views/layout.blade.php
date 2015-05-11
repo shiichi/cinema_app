@@ -13,7 +13,7 @@
 </head>
  
 <body>
-    <div class="brand">Horita IT School</div>
+    <div class="brand">Horita IT Scho</div>
     <div class="address-bar">Technology is best for our future.</div>
     {{-- ナビゲーションバーの Partial を使用 --}}
     @include('navbar')

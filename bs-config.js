@@ -5,7 +5,7 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": ["*/**"],
+    "files": ["**/**"],
     "watchOptions": {},
     "server": false,
     "proxy": "192.168.33.17:80",
@@ -34,7 +34,7 @@ module.exports = {
     "notify": true,
     "scrollProportionally": true,
     "scrollThrottle": 0,
-    "reloadDelay": 300,
+    "reloadDelay": 1,//注意
     "reloadDebounce": 0,
     "plugins": [],
     "injectChanges": true,
