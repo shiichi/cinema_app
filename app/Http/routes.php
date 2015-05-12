@@ -10,6 +10,21 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+use App\User;
+use App\Commands\SendWelcomeMail;
+ 
+Route::get('welcome_mail/{id}', function($id) {
+    $user = User::findOrFail($id);
+ 
+    Queue::push(new SendWelcomeMail($user)); // ①
+ 
+    return "ウェルカムメールを送りました。";
+});
+
+
+
+
 //映画
 Route::get('/', 'CinemasController@index');
 Route::get('cinema/', 'CinemasController@index');
