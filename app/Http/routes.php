@@ -11,20 +11,6 @@
 |
 */
 
-use App\User;
-use App\Commands\SendWelcomeMail;
- 
-Route::get('welcome_mail/{id}', function($id) {
-    $user = User::findOrFail($id);
- 
-    Queue::push(new SendWelcomeMail($user)); // ①
- 
-    return "ウェルカムメールを送りました。";
-});
-
-
-
-
 //映画
 Route::get('/', 'CinemasController@index');
 Route::get('cinema/', 'CinemasController@index');
@@ -36,15 +22,6 @@ Route::get('cinema/user/{user_id}', 'CinemasController@show_user');
 Route::get('cinema/search_movie', 'CinemasController@search_movie');
 Route::get('cinema/search_person', 'CinemasController@search_person');
 Route::get('cinema/search_user', 'CinemasController@search_user');
-
-//Route::get('/', ['as' => 'articles.index', 'uses' => 'ArticlesController@index']);
-Route::get('articles', ['as' => 'articles.index', 'uses' => 'ArticlesController@index']);
-Route::get('articles/create', ['as' => 'articles.create', 'uses' => 'ArticlesController@create']);
-Route::get('articles/{id}', ['as' => 'articles.show', 'uses' => 'ArticlesController@show']);
-Route::post('articles', ['as' => 'articles.store', 'uses' => 'ArticlesController@store']);
-Route::get('articles/{id}/edit', ['as' => 'articles.edit', 'uses' => 'ArticlesController@edit']);
-Route::patch('articles/{id}', ['as' => 'articles.update', 'uses' => 'ArticlesController@update']);
-Route::delete('articles/{id}', ['as' => 'articles.destroy', 'uses' => 'ArticlesController@destroy']);
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
