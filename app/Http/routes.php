@@ -37,11 +37,6 @@ Route::get('cinema/search_movie', 'CinemasController@search_movie');
 Route::get('cinema/search_person', 'CinemasController@search_person');
 Route::get('cinema/search_user', 'CinemasController@search_user');
 
-//堀田ITスクール
-Route::get('home', 'PagesController@home');
-Route::get('about', 'PagesController@about');
-Route::get('contact', 'PagesController@contact');
-
 //Route::get('/', ['as' => 'articles.index', 'uses' => 'ArticlesController@index']);
 Route::get('articles', ['as' => 'articles.index', 'uses' => 'ArticlesController@index']);
 Route::get('articles/create', ['as' => 'articles.create', 'uses' => 'ArticlesController@create']);

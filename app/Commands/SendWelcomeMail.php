@@ -16,21 +16,11 @@ class SendWelcomeMail extends Command implements SelfHandling, ShouldBeQueued {
 
 	protected $user;  // 追加
 
-	/**
-	 * Create a new command instance.
-	 *
-	 * @return void
-	 */
 	public function __construct(User $user)	//Userクラスのインスタンスをオブジェクトとして取得
 	{
 		$this->user = $user;
 	}
 
-	/**
-	 * Execute the command.
-	 *
-	 * @return void
-	 */
 	public function handle(Mailer $mailer)	//Mailer クラスのインスタンスをオブジェクトとして取得
 	{
         

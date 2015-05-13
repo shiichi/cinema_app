@@ -54,6 +54,8 @@
 								<button type="submit" class="btn btn-primary">
 									Register
 								</button>
+								{{-- 確認メール再送画面へのリンクを追加 --}}
+								<a class="btn btn-link" href="{{ url('/auth/resend') }}">ユーザー登録確認メールを再送する</a>
 							</div>
 						</div>
 					</form>

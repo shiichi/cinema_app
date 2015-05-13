@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html　lang="ja">
 <head>
 	<meta charset="utf-8">
 	<title></title>
@@ -41,6 +41,14 @@
         </ul>
       </div>
   </header>
+
+{{-- フラッシュメッセージの表示 --}}
+@if(Session::has('message'))
+    <div class="container">
+        <div class="alert alert-success">{{ Session::get('message') }}</div>
+    </div>
+@endif
+
   <!--　検索フォーム　-->
   <form class="search-bar" role="search" method="GET" action="/cinema/search_movie">
     <input type="search" name="searchtext"　placeholder="映画・人物を検索" />
