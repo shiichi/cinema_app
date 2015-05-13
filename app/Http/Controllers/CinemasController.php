@@ -172,9 +172,9 @@ class CinemasController extends Controller {
 
     public function search_movie() {
         $searchtext = \Request::get('searchtext');
-        $movies = Movie::where('title','like','%'.$searchtext.'%')->get();
-        $people = Person::where('name','like','%'.$searchtext.'%')->get();
-        $companies = Company::where('name','like','%'.$searchtext.'%')->get();
+        $movies = Movie::where('title','like','%'.$searchtext.'%')->paginate(10);
+        $people = Person::where('name','like','%'.$searchtext.'%')->paginate(20);
+        $companies = Company::where('name','like','%'.$searchtext.'%')->paginate(10);
 
         return view('cinemas.search_movie', compact('searchtext','movies','people','companies'));
     }

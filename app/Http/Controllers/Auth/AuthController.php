@@ -57,7 +57,7 @@ class AuthController extends Controller {
         $this->dispatch(
         	new SendConfirmationMail($user, $config->get('app_key'))
         );
- 
+
         // ここでログインはしない
         \Session::flash('message', 'ユーザー登録確認メールを送りました。');
         return redirect()->guest('auth/login');
